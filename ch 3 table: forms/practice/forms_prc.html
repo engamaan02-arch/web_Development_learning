@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel site</title>
+    <!-- style use by ai i only learn html  -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        form {
+            background: white;
+            color: #222;
+            width: 400px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        div {
+            margin-top: 20px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #2196f3;
+            box-shadow: 0 0 5px rgba(33, 150, 243, 0.4);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #2196f3;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1976d2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>travel booking form</h1>
+    <form action="">
+        <label for="name">ENTER YOUR NAME</label>
+        <input type="text" id="name" name="name" placeholder="xyz">
+        <div>
+            <label for="age">ENTER YOUR AGE</label>
+            <input type="number" id="age" name="age" placeholder="eg 18">
+        </div>
+        <div>
+            <label for="number">ENTER YOUR NUMBER</label>
+            <input type="tel" id="number" name="number" placeholder="999XXXXXXX">
+        </div>
+        <DIV>
+            <label for="address"> ENTER YOUR ADDRESS</label>
+            <textarea name="address" id="address"></textarea>
+        </DIV>
+        <div>
+            <label for="destiny">select your destiny</label>
+            <select name="destiny" id="destiny">
+                <option value="" disabled selected>choose here </option>
+                <option value="bali">bali</option>
+                <option value="thailand">thailand</option>
+                <option value="indonesia">indonesia</option>
+            </select>
+        </div>
+        <div>
+            <button>submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
